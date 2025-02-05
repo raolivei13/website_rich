@@ -8,9 +8,21 @@
 body {
   background-color: #121212;
   color: #e0e0e0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   line-height: 1.6;
   padding: 20px;
+}
+
+/* Progress Bar */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background-color: #1e90ff;
+  width: 0%;
+  z-index: 1000;
+  transition: width 0.2s ease;
 }
 
 /* NAVIGATION BAR */
@@ -18,7 +30,7 @@ body {
   background-color: #1f1f1f;
   padding: 15px 30px;
   display: flex;
-  justify-content: flex-end; /* Align links to the right */
+  justify-content: flex-end;
   align-items: center;
   border-bottom: 2px solid #333;
 }
@@ -37,7 +49,7 @@ body {
 }
 
 .nav-links a:hover {
-  color: #1e90ff; /* Blue-ish hover color */
+  color: #1e90ff;
 }
 
 /* HEADER SECTION */
@@ -48,10 +60,11 @@ body {
   padding: 40px 20px;
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
 }
 
 .text-content {
-  max-width: 70%; /* Adjust text width */
+  max-width: 60%;
 }
 
 .text-content h1 {
@@ -66,7 +79,7 @@ body {
 }
 
 .text-content a {
-  color: #1e90ff; /* Blue-ish link color */
+  color: #1e90ff;
   text-decoration: none;
 }
 
@@ -75,16 +88,19 @@ body {
 }
 
 .image-content {
-  flex-shrink: 0;
-  width: 30%; /* Adjust image width */
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
   display: flex;
-  justify-content: flex-end; /* Align image to the far right */
-  align-items: flex-start; /* Align image to the top */
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-top: 20px;
 }
 
 .profile-photo {
   width: 100%;
-  max-width: 300px; /* Adjust image size */
+  max-width: 300px;
   height: auto;
   border-radius: 12px;
   border: 2px solid #333;
@@ -108,7 +124,7 @@ body {
 }
 
 .cv-section a {
-  color: #1e90ff; /* Blue-ish link color */
+  color: #1e90ff;
   text-decoration: none;
   font-weight: 600;
 }
