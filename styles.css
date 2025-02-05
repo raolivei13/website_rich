@@ -51,7 +51,7 @@ body {
 }
 
 .text-content {
-  max-width: 60%;
+  max-width: 60%; /* Adjust text width */
 }
 
 .text-content h1 {
@@ -76,15 +76,15 @@ body {
 
 .image-content {
   flex-shrink: 0;
-  width: 35%;
+  width: 30%; /* Adjust image width */
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
+  justify-content: flex-end; /* Align image to the far right */
+  align-items: flex-start; /* Align image to the top */
 }
 
 .profile-photo {
   width: 100%;
-  max-width: 300px;
+  max-width: 300px; /* Adjust image size */
   height: auto;
   border-radius: 12px;
   border: 2px solid #333;
