@@ -97,8 +97,24 @@
     <p>&copy; 2025 Richard Oliveira. All rights reserved.</p>
   </footer>
 
-  <!-- JavaScript for Progress Bar -->
+  <!-- JavaScript for Smooth Scrolling and Progress Bar -->
   <script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('.nav-links a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault(); // Prevent default jump behavior
+        const targetId = this.getAttribute('href').substring(1); // Get the target section ID
+        const targetSection = document.getElementById(targetId); // Find the target section
+        if (targetSection) {
+          targetSection.scrollIntoView({
+            behavior: 'smooth', // Smooth scroll
+            block: 'start' // Align to the top of the section
+          });
+        }
+      });
+    });
+
+    // Progress Bar
     window.onscroll = function() {
       const progressBar = document.getElementById("progressBar");
       const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
