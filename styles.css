@@ -134,6 +134,7 @@ body {
   padding: 30px 20px;
   margin: 40px auto;
   max-width: 800px;
+  text-align: center;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
@@ -141,10 +142,11 @@ body {
 .teaching-section h2 {
   font-size: 1.8rem;
   margin-bottom: 20px;
-  text-align: center;
+  color: #e0e0e0;
 }
 
 .teaching-entry {
+  text-align: left;
   margin-bottom: 20px;
 }
 
