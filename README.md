@@ -1,1 +1,1 @@
-Website repo for my person website.
+Website repo.
