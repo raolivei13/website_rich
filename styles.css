@@ -91,7 +91,7 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  width: 35%; /* Increased width for the image */
+  width: 35%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
@@ -100,7 +100,7 @@ body {
 
 .profile-photo {
   width: 100%;
-  max-width: 350px; /* Increased max-width for the image */
+  max-width: 350px;
   height: auto;
   border-radius: 12px;
   border: 2px solid #333;
@@ -125,6 +125,50 @@ body {
 
 .current-works-section p {
   font-size: 1rem;
+  color: #cccccc;
+}
+
+/* TEACHING SECTION */
+.teaching-section {
+  background-color: #1f1f1f;
+  padding: 30px 20px;
+  margin: 40px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.teaching-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.teaching-entry {
+  margin-bottom: 20px;
+}
+
+.teaching-entry h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #1e90ff;
+}
+
+.teaching-role {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #cccccc;
+}
+
+.teaching-courses {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.teaching-courses li {
+  font-size: 1rem;
+  margin-bottom: 8px;
   color: #cccccc;
 }
 
