@@ -1,0 +1,6 @@
+# _config.yml
+title: "My Liquid Site"
+description: "A Jekyll site using Liquid templates"
+markdown: kramdown
+theme: minima  
+
