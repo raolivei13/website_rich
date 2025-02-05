@@ -70,42 +70,36 @@
   
   /* HEADER / INTRO SECTION */
   .header-section {
-      display: flex;
-      justify-content: space-between; /* Keeps text on the left, image on the right */
-      align-items: center; /* Vertically aligns content */
-      max-width: 1200px; /* Increase the width to give the image more space */
-      margin: 0 auto; /* Center the section */
-      padding: 0 2rem; /* Add padding for better spacing */
-  }
-    
-  .text-content {
-      flex: 1; /* Allows text to take remaining space */
-      max-width: 60%; /* Limits text width to avoid stretching */
-  }
+    max-width: 1200px; /* Ensures enough width for both text and image */
+    margin: 0 auto; /* Center content */
+    padding: 2rem;
+   }
+
+   .header-content {
+    display: flex; /* Makes text and image sit side-by-side */
+    justify-content: space-between; /* Ensures proper spacing */
+    align-items: flex-start; /* Aligns content to the top */
+    gap: 2rem; /* Provides space between text and image */
+   }
+
+.text-content {
+    flex: 1; /* Allows text to take the remaining space */
+    max-width: 60%; /* Prevents it from stretching too far */
+}
+
 .image-content {
-  flex-shrink: 0; /* Prevents the image from shrinking */
-  width: 300px; /* Adjust width for better positioning */
-  display: flex;
-  justify-content: flex-end; /* Pushes the image to the right */
+    flex-shrink: 0; /* Prevents the image from shrinking */
+    width: 300px; /* Controls the image width */
+    display: flex;
+    justify-content: flex-end; /* Pushes the image to the right */
 }
 
 .profile-photo {
-  width: 100%;
-  max-width: 300px; /* Set max-width to prevent it from getting too large */
-  border-radius: 8px;
-  border: 2px solid #333;
+    width: 100%;
+    max-width: 300px; /* Keeps the image from being too large */
+    border-radius: 8px;
+    border: 2px solid #333;
 }
-  
-  .main-title {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .intro-paragraph {
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
-    line-height: 1.8;
-  }
   
   /* MAIN CONTENT LAYOUT */
   .main-content {
