@@ -18,15 +18,9 @@ body {
   background-color: #1f1f1f;
   padding: 15px 30px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end; /* Align links to the right */
   align-items: center;
   border-bottom: 2px solid #333;
-}
-
-.site-name {
-  color: #ffffff;
-  font-size: 1.8rem;
-  font-weight: 600;
 }
 
 .nav-links {
@@ -36,7 +30,7 @@ body {
 }
 
 .nav-links a {
-  color: #b0b0b0; /* Default link color */
+  color: #b0b0b0;
   text-decoration: none;
   font-weight: 400;
   transition: color 0.3s ease;
@@ -85,6 +79,7 @@ body {
   width: 35%;
   display: flex;
   justify-content: flex-end;
+  align-items: flex-start;
 }
 
 .profile-photo {
@@ -94,49 +89,6 @@ body {
   border-radius: 12px;
   border: 2px solid #333;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-}
-
-/* PUBLICATIONS SECTION */
-.publications-section {
-  padding: 40px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.publications-section h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.publication-card {
-  background-color: #1f1f1f;
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-.pub-details h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.pub-details p {
-  font-size: 1rem;
-  color: #cccccc;
-}
-
-.pub-links {
-  margin-top: 10px;
-}
-
-.pub-links a {
-  color: #1e90ff; /* Blue-ish link color */
-  text-decoration: none;
-  margin-right: 10px;
-}
-
-.pub-links a:hover {
-  text-decoration: underline;
 }
 
 /* CV SECTION */
