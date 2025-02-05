@@ -91,18 +91,22 @@
     max-width: 60%; /* Prevents it from stretching too far */
 }
 
+/* IMAGE */
 .image-content {
     flex-shrink: 0;
-    width: 400px; /* Adjust width to match the image */
+    width: 100%;  /* Take full width of the container */
     display: flex;
-    justify-content: flex-end;/* Pushes the image to the right */
+    justify-content: center;  /* Center the image horizontally */
+    margin-top: 2rem;  /* Add some spacing above the image */
 }
 
 .profile-photo {
     width: 100%;
-    max-width: 400px; /* Keeps the image from being too large */
-    border-radius: 10px;
-    border: 3px solid #444;
+    max-width: 500px;  /* Increase max-width for a larger image */
+    height: auto;  /* Maintain aspect ratio */
+    border-radius: 12px;  /* Rounded corners */
+    border: 3px solid #333;  /* Slightly thicker border */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);  /* Subtle shadow for depth */
 }
   
   /* MAIN CONTENT LAYOUT */
@@ -211,17 +215,28 @@
   }
   
   /* CV SECTION */
-  .cv-section {
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-  }
-  .cv-section h2 {
+.cv-section {
+    max-width: 900px;  /* Ensure consistent width with other sections */
+    margin: 2rem auto;  /* Center the section */
+    padding: 2rem 1rem;  /* Add padding for better spacing */
+    background-color: #1e1e1e;  /* Optional: slight background contrast */
+    border-radius: 10px;  /* Optional: rounded corners for aesthetics */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);  /* Optional: subtle shadow */
+}
+
+.cv-section h2 {
     margin-bottom: 1rem;
-    font-size: 1.5rem;
-    border-bottom: 1px solid #444;
+    font-size: 1.8rem;  /* Slightly larger font size for heading */
+    border-bottom: 2px solid #444;
     padding-bottom: 0.5rem;
-  }
+    text-align: center;  /* Center-align the heading */
+}
+
+.cv-section p {
+    text-align: center;  /* Center-align the text */
+    font-size: 1.1rem;
+}
+
   
   /* FOOTER */
   .footer {
@@ -238,4 +253,16 @@
 /* SECTION */
 section, header {
     scroll-margin-top: 80px; /* Adjust based on your navbar height */
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 768px) {
+    .profile-photo {
+        max-width: 100%;  /* Ensure image fits smaller screens */
+    }
+
+    .cv-section {
+        padding: 1rem;  /* Reduce padding for small screens */
+    }
 }
