@@ -1,4 +1,9 @@
 /* GLOBAL STYLES */
+
+.intro-paragraph, p {
+    margin-bottom: 1.8rem; /* Adjusts space between paragraphs */
+    line-height: 1.9; /* Improves readability */
+}
 * {
     margin: 0;
     padding: 0;
@@ -31,17 +36,15 @@
   }
   
   /* NAVIGATION BAR */
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #2a2a2a;
-    padding: 0.75rem 1.5rem;
-    border-bottom: 1px solid #333;
-    position: sticky;
+.navbar {
+    position: fixed;
     top: 0;
-    z-index: 10;
-  }
+    width: 100%;
+    background-color: #2a2a2a;
+    padding: 1rem 1.5rem; /* Initial padding */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+    z-index: 1000; /* Ensure navbar stays above other content */
+}
   
   .site-name {
     color: #e0e0e0;
@@ -92,17 +95,17 @@
 }
 
 .image-content {
-    flex-shrink: 0; /* Prevents the image from shrinking */
-    width: 300px; /* Controls the image width */
+    flex-shrink: 0;
+    width: 400px; /* Adjust width to match the image */
     display: flex;
-    justify-content: flex-end; /* Pushes the image to the right */
+    justify-content: flex-end;/* Pushes the image to the right */
 }
 
 .profile-photo {
     width: 100%;
-    max-width: 300px; /* Keeps the image from being too large */
-    border-radius: 8px;
-    border: 2px solid #333;
+    max-width: 400px; /* Keeps the image from being too large */
+    border-radius: 10px;
+    border: 3px solid #444;
 }
   
   /* MAIN CONTENT LAYOUT */
