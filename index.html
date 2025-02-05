@@ -3,97 +3,125 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Awesome Portfolio</title>
-  <!-- Link to your stylesheet -->
+  <title>My Website - Dark Theme</title>
   <link rel="stylesheet" href="styles.css" />
-  <!-- Google Fonts (example) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Example: Using Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link 
     href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" 
     rel="stylesheet"
   >
 </head>
 <body>
+
   <!-- Navigation Bar -->
   <nav class="navbar">
-    <div class="nav-logo"><a href="#">My Website</a></div>
-    <ul class="nav-links">
-      <li><a href="#home" class="active-link">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <div class="navbar-left">
+      <h2 class="site-name">Richard Oliveira</h2>
+    </div>
+    <div class="navbar-right">
+      <ul class="nav-links">
+        <li><a href="#about" class="active-link">about</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#cv">CV</a></li>
+        <!-- 
+          Add more items if you wish, e.g., 
+          <li><a href="#blog">Blog</a></li>
+        -->
+      </ul>
+    </div>
   </nav>
 
-  <!-- Hero Section -->
-  <header id="home" class="hero-section">
-    <div class="hero-content">
-      <h1>Hello, I’m [Your Name]</h1>
-      <p>Welcome to my personal website!</p>
-      <a href="#contact" class="btn-primary">Get in Touch</a>
-    </div>
+  <!-- Header / Intro Section -->
+  <header class="header-section" id="about">
+    <h1 class="main-title">ECE PhD student at UC San Diego.</h1>
+    <p class="intro-paragraph">
+      I am a first year Electrical and Computer Engineering PhD student at 
+      <a href="#">University of California, San Diego Jacobs School of Engineering</a>. 
+      I am interested in the theoretical foundations of artificial intelligence, with research 
+      interests at the intersection of optimization theory, compressed sensing, 
+      and theoretical neuroscience.
+    </p>
+    <p class="intro-paragraph">
+      I received my MSc. in Electrical Engineering, Signal and Image Processing and my BSc. in Electrical Engineering, Machine Learning and Controls 
+      from the <a href="#">University of California, San Diego</a>, La Jolla, USA.
+    </p>
+    <p class="intro-paragraph">
+      Currently, I am working for a startup.
+    </p>
   </header>
 
-  <!-- About Section -->
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <div class="about-content">
-      <img src="https://via.placeholder.com/200" alt="Profile Photo"/>
+  <!-- Main Content Section -->
+  <section class="main-content">
+    <!-- Left Column (detailed text) -->
+    <div class="left-column">
+      <h2>More Info</h2>
       <p>
-        I’m a [Your Role or Title] who loves building cool things. Lorem ipsum
-        dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet
-        urna at lorem viverra ultrices. 
+        Here, you can add more paragraphs about your current work, research focus, 
+        lab details, or any other information you'd like to highlight. 
+      </p>
+      <p>
+        You could also list relevant coursework or expertise. For example:
+        <ul>
+          <li>Optimization Theory</li>
+          <li>Compressed Sensing</li>
+          <li>Signal Processing</li>
+          <li>Theoretical Neuroscience</li>
+        </ul>
       </p>
     </div>
-  </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="section bg-light">
-    <h2>My Projects</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <img src="https://via.placeholder.com/400x200" alt="Project 1" />
-        <h3>Project One</h3>
-        <p>A brief description of your project. You can link to it here:</p>
-        <a href="#" class="btn-secondary">View Project</a>
+    <!-- Right Column (profile image & contact) -->
+    <div class="right-column">
+      <img src="prof_image.jpg" alt="My Profile Photo" class="profile-photo">
+      <div class="contact-info">
+        <p>Jacobs Hall, Room 4516</p>
+        <p>9736 Engineers Ln</p>
+        <p>La Jolla, CA 92092</p>
       </div>
-      <div class="project-card">
-        <img src="https://via.placeholder.com/400x200" alt="Project 2" />
-        <h3>Project Two</h3>
-        <p>Another brief description of a project. You can link to it here:</p>
-        <a href="#" class="btn-secondary">View Project</a>
-      </div>
-      <!-- Add more project-cards as needed -->
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="section">
-    <h2>Contact Me</h2>
-    <p>Feel free to reach out for collaborations or just a friendly hello!</p>
-    <form class="contact-form">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" placeholder="Your Name" required />
+  <!-- Publications Section -->
+  <section id="publications" class="publications-section">
+    <h2>selected publications</h2>
+    <div class="publication-card">
+      <div class="pub-img-container">
+        <!-- Example placeholder image; use your own small icon or cover image -->
+        <img 
+          src="https://via.placeholder.com/100x120" 
+          alt="Pub Cover"
+        />
+      </div>
+      <div class="pub-details">
+        <h3>Half-Space Modeling With Reflecting Surface in Molecular Communication</h3>
+        <p>
+          <strong>Anil Kamber</strong>, H. Birkan Yilmaz, Ali E. Pusane, and 1 more author<br/>
+          <em>IEEE Transactions on Molecular, Biological, and Multi-Scale Communications, 2024</em>
+        </p>
+        <div class="pub-links">
+          <a href="#" class="btn pub-btn">DOI</a>
+          <a href="#" class="btn pub-btn">BIB</a>
+        </div>
+      </div>
+    </div>
+    <!-- Add more publication cards as needed -->
+  </section>
 
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" placeholder="Your Email" required />
-
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
-
-      <button type="submit" class="btn-primary">Send</button>
-    </form>
+  <!-- CV Section (Placeholder) -->
+  <section id="cv" class="cv-section">
+    <h2>Curriculum Vitae</h2>
+    <p>
+      You can link or embed your CV here:
+      <a href="#">Download My CV (PDF)</a>
+    </p>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <p>&copy; 2025 [Your Name]. All Rights Reserved.</p>
-    <div class="social-links">
-      <a href="#" target="_blank">LinkedIn</a>
-      <a href="#" target="_blank">GitHub</a>
-      <a href="#" target="_blank">Twitter</a>
-    </div>
+    <p>&copy; 2025 Anil Kamber. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
