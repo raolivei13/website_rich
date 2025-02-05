@@ -70,10 +70,31 @@
   
   /* HEADER / INTRO SECTION */
   .header-section {
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 0 1rem;
+      display: flex;
+      justify-content: space-between; /* Keeps text on the left, image on the right */
+      align-items: center; /* Vertically aligns content */
+      max-width: 1200px; /* Increase the width to give the image more space */
+      margin: 0 auto; /* Center the section */
+      padding: 0 2rem; /* Add padding for better spacing */
   }
+    
+  .text-content {
+      flex: 1; /* Allows text to take remaining space */
+      max-width: 60%; /* Limits text width to avoid stretching */
+  }
+.image-content {
+  flex-shrink: 0; /* Prevents the image from shrinking */
+  width: 300px; /* Adjust width for better positioning */
+  display: flex;
+  justify-content: flex-end; /* Pushes the image to the right */
+}
+
+.profile-photo {
+  width: 100%;
+  max-width: 300px; /* Set max-width to prevent it from getting too large */
+  border-radius: 8px;
+  border: 2px solid #333;
+}
   
   .main-title {
     font-size: 2rem;
