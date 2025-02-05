@@ -174,6 +174,16 @@ body {
   color: #cccccc;
 }
 
+/* TEACHING SECTION LINKS */
+.teaching-courses a {
+  color: #1e90ff; /* Blue color for links */
+  text-decoration: none; /* Remove underline */
+}
+
+.teaching-courses a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
 /* CV SECTION */
 .cv-section {
   background-color: #1f1f1f;
