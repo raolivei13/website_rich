@@ -15,16 +15,44 @@
 </head>
 
 <script>
-    window.addEventListener("scroll", function () {
-        let navbar = document.querySelector(".navbar");
+    // Function to highlight active nav link while scrolling
+    document.addEventListener("DOMContentLoaded", function () {
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll(".nav-links a");
 
-        if (window.scrollY > 50) {
-            navbar.style.padding = "0.5rem 1.5rem"; /* Shrinks navbar */
-            navbar.style.backgroundColor = "#333"; /* Darkens slightly */
-        } else {
-            navbar.style.padding = "1.5rem 1.5rem"; /* Expands navbar */
-            navbar.style.backgroundColor = "#2a2a2a"; /* Reverts color */
+        function activateNavLink() {
+            let scrollPosition = window.scrollY + 100;
+
+            sections.forEach((section) => {
+                if (scrollPosition >= section.offsetTop && scrollPosition < section.offsetTop + section.offsetHeight) {
+                    let id = section.getAttribute("id");
+                    navLinks.forEach((link) => {
+                        link.classList.remove("active-link");
+                        if (link.getAttribute("href") === `#${id}`) {
+                            link.classList.add("active-link");
+                        }
+                    });
+                }
+            });
         }
+
+        window.addEventListener("scroll", activateNavLink);
+
+        // Smooth scrolling when clicking on navbar links
+        navLinks.forEach((link) => {
+            link.addEventListener("click", function (event) {
+                event.preventDefault();
+                let targetId = this.getAttribute("href").substring(1);
+                let targetSection = document.getElementById(targetId);
+                
+                if (targetSection) {
+                    window.scrollTo({
+                        top: targetSection.offsetTop - 70, // Adjust for navbar height
+                        behavior: "smooth"
+                    });
+                }
+            });
+        });
     });
 </script>
 
