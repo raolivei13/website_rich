@@ -91,7 +91,7 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  width: 30%;
+  width: 35%; /* Increased width for the image */
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
@@ -100,11 +100,32 @@ body {
 
 .profile-photo {
   width: 100%;
-  max-width: 300px;
+  max-width: 350px; /* Increased max-width for the image */
   height: auto;
   border-radius: 12px;
   border: 2px solid #333;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* CURRENT WORKS SECTION */
+.current-works-section {
+  background-color: #1f1f1f;
+  padding: 30px 20px;
+  margin: 40px auto;
+  max-width: 800px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.current-works-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.current-works-section p {
+  font-size: 1rem;
+  color: #cccccc;
 }
 
 /* CV SECTION */
