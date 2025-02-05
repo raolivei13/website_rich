@@ -36,14 +36,14 @@ body {
 }
 
 .nav-links a {
-  color: #b0b0b0;
+  color: #b0b0b0; /* Default link color */
   text-decoration: none;
   font-weight: 400;
   transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #64ffda;
+  color: #1e90ff; /* Blue-ish hover color */
 }
 
 /* HEADER SECTION */
@@ -72,7 +72,7 @@ body {
 }
 
 .text-content a {
-  color: #64ffda;
+  color: #1e90ff; /* Blue-ish link color */
   text-decoration: none;
 }
 
@@ -130,7 +130,7 @@ body {
 }
 
 .pub-links a {
-  color: #64ffda;
+  color: #1e90ff; /* Blue-ish link color */
   text-decoration: none;
   margin-right: 10px;
 }
@@ -156,7 +156,7 @@ body {
 }
 
 .cv-section a {
-  color: #64ffda;
+  color: #1e90ff; /* Blue-ish link color */
   text-decoration: none;
   font-weight: 600;
 }
