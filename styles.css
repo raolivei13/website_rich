@@ -1,5 +1,4 @@
 /* GLOBAL STYLES */
-
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +8,7 @@
 body {
   background-color: #121212;
   color: #e0e0e0;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.6;
   padding: 20px;
 }
@@ -61,8 +60,8 @@ body {
   max-width: 60%;
 }
 
-.text-content h2 {
-  font-size: 2rem;
+.text-content h1 {
+  font-size: 2.5rem;
   margin-bottom: 20px;
 }
 
@@ -81,16 +80,6 @@ body {
   text-decoration: underline;
 }
 
-.research-keywords {
-  list-style-type: disc;
-  padding-left: 20px;
-  margin-top: 10px;
-}
-
-.research-keywords li {
-  margin-bottom: 8px;
-}
-
 .image-content {
   flex-shrink: 0;
   width: 35%;
@@ -105,6 +94,49 @@ body {
   border-radius: 12px;
   border: 2px solid #333;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* PUBLICATIONS SECTION */
+.publications-section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.publications-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.publication-card {
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.pub-details h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.pub-details p {
+  font-size: 1rem;
+  color: #cccccc;
+}
+
+.pub-links {
+  margin-top: 10px;
+}
+
+.pub-links a {
+  color: #64ffda;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.pub-links a:hover {
+  text-decoration: underline;
 }
 
 /* CV SECTION */
