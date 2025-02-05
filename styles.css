@@ -67,6 +67,10 @@
   .nav-links a.active-link {
     color: #fff;
   }
+
+ html {
+    scroll-behavior: smooth;
+    }
   
   /* HEADER / INTRO SECTION */
   .header-section {
