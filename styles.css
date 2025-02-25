@@ -108,19 +108,24 @@ body {
 }
 
 /* CURRENT WORKS SECTION */
-/* Change link color in the current-works-section */
-.current-works-section a {
-  color: #00008B; /* Change this to any color you prefer */
-  text-decoration: none;
+.current-works-section {
+  background-color: #121212;
+  padding: 30px 20px;
+  margin: 40px auto;
+  max-width: 800px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
-.current-works-section a:visited {
-  color: #00008B; /* Ensures visited links do not turn purple */
+.current-works-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
 }
 
-.current-works-section a:hover {
-  color: #00008B; /* Optional: Change color on hover */
-  text-decoration: underline;
+.current-works-section p {
+  font-size: 1rem;
+  color: #cccccc;
 }
 
 /* TEACHING SECTION */
