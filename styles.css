@@ -108,7 +108,7 @@ body {
 }
 
 /* CURRENT WORKS SECTION */
-.current-works-section-section {
+.current-works-section {
   background-color: #1f1f1f;
   padding: 30px 20px;
   margin: 40px auto;
@@ -118,18 +118,18 @@ body {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
-.current-works-section-section h2 {
+.current-works-section h2 {
   font-size: 1.8rem;
   margin-bottom: 15px;
 }
 
-.current-works-section-section a {
+.current-works-section a {
   color: #1e90ff;
   text-decoration: none;
   font-weight: 600;
 }
 
-.current-works-section-section a:hover {
+.current-works-section a:hover {
   text-decoration: underline;
 }
 
