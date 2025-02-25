@@ -108,8 +108,8 @@ body {
 }
 
 /* CURRENT WORKS SECTION */
-.current-works-section {
-  background-color: #e0e0e0;
+.current-works-section-section {
+  background-color: #1f1f1f;
   padding: 30px 20px;
   margin: 40px auto;
   max-width: 800px;
@@ -118,14 +118,19 @@ body {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
-.current-works-section h2 {
+.current-works-section-section h2 {
   font-size: 1.8rem;
   margin-bottom: 15px;
 }
 
-.current-works-section p {
-  font-size: 1rem;
-  color: #cccccc;
+.current-works-section-section a {
+  color: #1e90ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.current-works-section-section a:hover {
+  text-decoration: underline;
 }
 
 /* TEACHING SECTION */
