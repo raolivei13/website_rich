@@ -110,16 +110,16 @@ body {
 /* CURRENT WORKS SECTION */
 /* Change link color in the current-works-section */
 .current-works-section a {
-  color: #1e90ff; /* Change this to any color you prefer */
+  color: #00008B; /* Change this to any color you prefer */
   text-decoration: none;
 }
 
 .current-works-section a:visited {
-  color: #1e90ff; /* Ensures visited links do not turn purple */
+  color: #00008B; /* Ensures visited links do not turn purple */
 }
 
 .current-works-section a:hover {
-  color: #ffcc00; /* Optional: Change color on hover */
+  color: #00008B; /* Optional: Change color on hover */
   text-decoration: underline;
 }
 
