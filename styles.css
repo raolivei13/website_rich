@@ -1,20 +1,4 @@
 /* GLOBAL STYLES */
-
-.content-wrapper {
-  max-width: 800px;       /* match your other sections */
-  margin: 40px auto 0;    /* push down from header, center horizontally */
-  display: flex;          
-  flex-direction: column; /* stack vertically */
-  gap: 40px;              /* uniform spacing between each section */
-}
-
-/* reset old margins so the gap is controlled by .content-wrapper */
-.current-works-section,
-.teaching-section,
-.cv-section {
-  margin: 0;  
-}
-
 {
   margin: 0;
   padding: 0;
